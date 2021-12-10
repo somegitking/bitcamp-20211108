@@ -17,3 +17,12 @@
   - com.eomcs.mylist.ContactController.add()
 - 화면 구현
   - /static/contact/form.html 생성
+
+### 3단계 - 연락처 상세보기 구현
+
+- 화면 구현
+  - /static/contact/view.html 생성
+- REST API 구현
+  - com.eomcs.mylist.ContactController.get()
+- 화면과 REST API 연동
+  - /static/contact/view.html에 AJAX 적용
