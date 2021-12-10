@@ -157,8 +157,11 @@ https://meet.google.com/cyz-mbfk-qaa
 - 명령문에 라벨을 붙이는 경우를 설명할 수 있는가?
 - for 반복문을 사용할 수 있는가?
 
-
-
+## 25일차(2021-12-10,금)
+- 중첩 for 반복문을 다룰 수 있는가?
+- for 문에서 break와 continue 명령을 사용할 수 있는가?
+- ArrayList 와 배열의 차이점을 설명할 수 있는가?
+- 
 
 
 
