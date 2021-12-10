@@ -19,18 +19,34 @@
 
 // 요청 유효성 검사
 if (location.href.indexOf('?') == -1) {
-  window.alert("요청이 올바르지 않습니다!")
+  window.alert("요청이 올바르지 않습니다!");
   location.href = "index.html";
 }
 
-console.log(location.href.split('?')[1]);
+// URL에서 쿼리스트링을 추출하여 파라미터의 이름과 값을 분리한다.
+var params = new URLSearchParams(location.href.split('?')[1]);
 
 // 쿼리스트링에서 이메일 값을 추출한다.
+var email = params.get("email");
+if (email == null) {
+  window.alert("이메일이 없습니다.");
+  location.href = "index.html";
+}
 
 var xName = document.querySelector("#x-name");
 var xEmail = document.querySelector("#x-email");
 var xTel = document.querySelector("#x-tel");
 var xCompany = document.querySelector("#x-company");
+
+// 이메일을 가지고 연락처 정보를 가져온다.
+var result = "홍길동,hong@test.com,010-1111-2222,비트캠프";
+
+var contact = result.split(",");
+xName.value = contact[0];
+xEmail.value = contact[1];
+xTel.value = contact[2];
+xCompany.value = contact[3];
+
 
 document.querySelector("#x-update-btn").onclick = function() {
   fetch(`/contact/add?name=${xName.value}&email=${xEmail.value}&tel=${xTel.value}&company=${xCompany.value}`)
