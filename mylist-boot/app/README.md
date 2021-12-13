@@ -35,11 +35,27 @@
       - 즉 임시 변수를 사용할 자리에 함수 호출을 그대로 집어 넣어라!
     - 7: 필수입력 항목 검사하기
     - 8: 최적화 - 태그 찾기를 리스너 밖에 둔다.
-    
-### 3단계 - 연락처 상세보기 구현
+    - 9: 등록 후 목록 화면으로 이동
+
+### 3단계 - 연락처 데이터 유지
+
+- REST API 기능 변경
+  - com.eomcs.mylist.ContactController  변경
+    - 배열을 로컬 변수에서 인스턴스 변수로 전환한다.
+    - list()와 add()는 인스턴스 배열 변수를 사용한다.
+    - list(): 배열에 입력된 값을 별도의 배열에 담아 리턴한다.
+    - add(): 인스턴스 배열에 값을 보관한다.
+
+### 4단계 - 연락처 상세보기 구현
 
 - 화면 구현
   - /static/contact/view.html 생성
+    - 0: form.html 을 복사해 온다.
+    - 1: URL에서 쿼리스트링을 추출한다.
+    - 2: 쿼리스트링에서 이메일 값을 추출한다.
+    
+  - /static/contact/index.html 변경
+    - 연락처의 이름에 상세보기 링크를 추가한다.
 - REST API 구현
   - com.eomcs.mylist.ContactController.get()
 - 화면과 REST API 연동
