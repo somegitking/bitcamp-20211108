@@ -61,4 +61,12 @@
 - 화면과 REST API 연동
   - /static/contact/view.html 변경
     - 4: 서버에서 데이터 가져온다.
-    - 5: 쿼리스트링 분석기 URLSearchParam 객체를 사용해서 이메일을 추출한다.
+    - 5: 쿼리스트링 분석기 URLSearchParams 객체를 사용해서 email 파라미터를 추출한다.
+
+
+
+
+
+
+
+#

@@ -33,14 +33,8 @@
   console.log(qs);
 
   // 2) 쿼리 스트링에서 email 값을 추출한다.
-  var email = null;
-  var values = qs.split("&");
-  for (var value of values) {
-    if (value.startsWith("email=")) {
-      email = value.split("=")[1];
-      break;
-    }
-  }
+  var params = new URLSearchParams(qs);
+  var email = params.get("email");
 
   if (email == null) {
     alert("이메일 값이 없습니다.");
