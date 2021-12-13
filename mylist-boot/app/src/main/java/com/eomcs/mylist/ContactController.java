@@ -26,4 +26,22 @@ public class ContactController {
     contacts[size++] = contact;
     return size;
   }
+
+  @RequestMapping("/contact/get")
+  public Object get(String email) {
+    for (int i = 0; i < size; i++) {
+      // 학습용
+      //      String contact = contacts[i]; // 예) "u1,u1@test.com,1111,비트캠프"
+      //      String[] values = contact.split(","); // 예) {"u1","u1@test.com","1111","비트캠프"}
+      //      if (values[1].equals(email)) { // 예) "u1@test.com"
+      //        return contacts[i];
+      //      }
+
+      // 실전
+      if (contacts[i].split(",")[1].equals(email)) { // 예) "u1@test.com"
+        return contacts[i];
+      }
+    }
+    return "";
+  }
 }

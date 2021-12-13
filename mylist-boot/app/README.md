@@ -53,10 +53,12 @@
     - 0: form.html 을 복사해 온다.
     - 1: URL에서 쿼리스트링을 추출한다.
     - 2: 쿼리스트링에서 이메일 값을 추출한다.
-    
+    - 3: 연락처 상세 정보를 출력한다.
   - /static/contact/index.html 변경
     - 연락처의 이름에 상세보기 링크를 추가한다.
 - REST API 구현
   - com.eomcs.mylist.ContactController.get()
 - 화면과 REST API 연동
-  - /static/contact/view.html에 AJAX 적용
+  - /static/contact/view.html 변경
+    - 4: 서버에서 데이터 가져온다.
+    - 5: 쿼리스트링 분석기 URLSearchParam 객체를 사용해서 이메일을 추출한다.
