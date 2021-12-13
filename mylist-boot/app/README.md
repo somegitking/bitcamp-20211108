@@ -63,6 +63,23 @@
     - 4: 서버에서 데이터 가져온다.
     - 5: 쿼리스트링 분석기 URLSearchParams 객체를 사용해서 email 파라미터를 추출한다.
 
+### 5단계 - 연락처 변경 구현
+
+- 화면 구현
+  - /static/contact/view.html 변경
+    - 6: 이메일 항목을 readonly로 변경한다.
+    - 7: 변경한 내용을 서버에 보낸다.
+- REST API 구현
+  - com.eomcs.mylist.ContactController.update()
+
+### 6단계 - 연락처 삭제 구현
+
+- REST API 구현
+  - com.eomcs.mylist.ContactController.delete()
+- 화면 구현
+  - /static/contact/view.html 변경
+    - 8: 삭제 버튼 추가 및 리스너를 등록한다.
+    - 9: 서버에 삭제를 요청한다.
 
 
 
