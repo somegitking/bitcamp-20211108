@@ -21,8 +21,9 @@
 <script type="text/javascript">
 
   // 1) URL에서 쿼리스트링(query string)을 추출한다.
+  // 예) http://localhost:8080/contact/view.html?email=aaa@test.com&name=aaa&tel=1111
   var arr = location.href.split("?");
-  console.log(arr);
+  console.log(arr); // ["http://localhost:8080/contact/view.html","email=aaa@test.com&name=aaa&tel=1111"]
 
   if (arr.length == 1) {
     alert("요청 형식이 옳바르지 않습니다.")
@@ -33,6 +34,7 @@
   console.log(qs);
 
   // 2) 쿼리 스트링에서 email 값을 추출한다.
+  // 예) email=aaa@test.com&name=aaa&tel=1111
   var email = null;
   var values = qs.split("&");
   for (var value of values) {
