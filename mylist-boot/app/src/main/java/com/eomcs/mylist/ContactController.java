@@ -52,16 +52,8 @@ public class ContactController {
       return 0;
     }
 
-    for (int i = 0; i < size; i++) {
-      if (contacts[i].split(",")[1].equals(email)) { 
-        for (int j = i + 1; j < size; j++) {
-          contacts[j - 1] = contacts[j];
-        }
-        size--;
-        return 1;
-      }
-    }
-    return 0;
+    remove(index);
+    return 1;
   }
 
   // 기능: 
@@ -82,6 +74,18 @@ public class ContactController {
       }
     }
     return -1;
+  }
+
+  // 기능:
+  // - 배열에서 지정한 항목을 삭제한다.
+  //
+  String remove(int index) {
+    String old = contacts[index];
+    for (int i = index + 1; i < size; i++) {
+      contacts[i - 1] = contacts[i];
+    }
+    size--;
+    return old;
   }
 }
 

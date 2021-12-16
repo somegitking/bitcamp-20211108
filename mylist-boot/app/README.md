@@ -25,6 +25,13 @@
 ### 3단계 - 배열 항목 삭제 코드를 분리한다.
 
 - ContactController.remove() 정의
+  - delete() 변경
+  - 백업: ContactController.java.03
+
+### 4단계 - 배열 크기를 자동으로 늘린다.
+
+- ContactController.add() 변경
+
 
 - 화면 구현
   - /static/contact/index.html 생성

@@ -196,6 +196,6 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바스크립트
   - 함수 사용법: ex03/
 - MyList 프로젝트 실습(Ver. 02)
-  - 
+  - 메서드 다루기
 
 ##
