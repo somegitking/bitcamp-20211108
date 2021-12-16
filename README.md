@@ -194,7 +194,8 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 29일차(2021-12-16,목)
 - 자바스크립트
-  - 함수: ex03/
-
+  - 함수 사용법: ex03/
+- MyList 프로젝트 실습(Ver. 02)
+  - 
 
 ##
