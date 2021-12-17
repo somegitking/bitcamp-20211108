@@ -24,6 +24,8 @@
 
 ### 3단계 - 배열 항목 삭제 코드를 분리한다.
 
+코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
+
 - ContactController.remove() 정의
   - delete() 변경
   - 백업: ContactController.java.03
@@ -31,6 +33,24 @@
 ### 4단계 - 배열 크기를 자동으로 늘린다.
 
 - ContactController.add() 변경
+  - 배열이 꽉차면 새 배열을 만들어 확장한다.
+  - 백업: ContactController.java.04
+
+### 5단계 - 배열 크기를 늘리는 코드를 별도의 메서드로 분리한다.
+
+코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
+
+- ContactController.grow() 생성
+  - add() 변경
+  - 백업: ContactController.java.05
+
+### 6단계 - 배열 크기를 계산하는 코드를 별도의 메서드로 분리한다.
+
+코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
+
+- ContactController.newLength() 생성
+  - grow() 변경
+  - 백업: ContactController.java.06
 
 
 - 화면 구현

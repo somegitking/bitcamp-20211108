@@ -198,4 +198,9 @@ https://meet.google.com/cyz-mbfk-qaa
 - MyList 프로젝트 실습(Ver. 02)
   - 메서드 다루기
 
+## 30일차(2021-12-17,금)
+- MyList 프로젝트 실습(Ver. 02)
+  - 메서드 다루기(계속)
+
+
 ##
