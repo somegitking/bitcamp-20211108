@@ -201,6 +201,12 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 30일차(2021-12-17,금)
 - MyList 프로젝트 실습(Ver. 02)
   - 메서드 다루기(계속)
+- 자바 기초(com.eomcs.lang.ex07)
+  - 메서드 사용법(Exam0110 ~ Exam0421)
+
+
+
+
 
 
 ##
