@@ -52,20 +52,15 @@
   - grow() 변경
   - 백업: ContactController.java.06
 
+### 7단계 - 배열을 복사하는 코드를 메서드로 분리한다.
 
-- 화면 구현
-  - /static/contact/index.html 생성
-    - 0: 기본 화면
-    - 1: 테이블 추가
-    - 2: 연락처 배열 준비 및 각 항목 확인
-    - 3: 문자열에서 이름, 이메일, 전화, 회사 정보 추출
-    - 4: 테이블에 추가할 tr 태그 생성
-    - 5: tr 태그를 테이블에 추가
-- REST API 구현
-  - com.eomcs.mylist.ContactController.list()
-- 화면과 REST API 연동
-  - /static/contact/index.html 변경
-    - 6: AJAX를 이용하여 서버의 REST API와 연동하기
+코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
+
+- ContactController.copy() 생성
+  - grow() 변경
+  - 백업: ContactController.java.07
+
+
 
 
 

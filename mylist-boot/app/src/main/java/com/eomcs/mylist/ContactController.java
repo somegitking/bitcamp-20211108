@@ -97,11 +97,7 @@ public class ContactController {
   //
   String[] grow() {
     String[] arr = new String[newLength()];
-
-    // 기존 배열의 값을 새 배열로 복사한다.
-    for (int i = 0; i < contacts.length; i++) {
-      arr[i] = contacts[i];
-    }
+    copy(contacts, arr);
     return arr;
   }
 
@@ -110,6 +106,21 @@ public class ContactController {
   //
   int newLength() {
     return contacts.length + (contacts.length >> 1);
+  }
+
+  // 기능: 
+  // - 배열을 복사한다.
+  // 
+  void copy(String[] source, String[] target) {
+    // 개발자가 잘못 사용할 것을 대비해서 다음 코드를 추가한다.
+    // 즉 target 배열이 source 배열 보다 작을 경우 target 배열 크기만큼만 복사한다.
+    int length = source.length;
+    if (target.length < source.length) {
+      length = target.length;
+    }
+    for (int i = 0; i < length; i++) {
+      target[i] = source[i];
+    }
   }
 }
 
