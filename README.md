@@ -206,6 +206,7 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 31일차(2021-12-20,월)
 - 자바 기초(com.eomcs.lang.ex07)
+  - 클래스 파일 포맷 분석 및 직접 바이트코드 작성하기 
   - 메서드 사용법(계속; Exam0440 ~ )
 
 
