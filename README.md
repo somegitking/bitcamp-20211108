@@ -204,8 +204,9 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바 기초(com.eomcs.lang.ex07)
   - 메서드 사용법(Exam0110 ~ Exam0421)
 
-
-
+## 31일차(2021-12-20,월)
+- 자바 기초(com.eomcs.lang.ex07)
+  - 메서드 사용법(계속; Exam0440 ~ )
 
 
 
