@@ -25,9 +25,17 @@
 - com.eomcs.mylist.ContactController 클래스 변경
   - list() 변경 => 웹브라우저로 응답 결과 확인
   - add() 변경
+    - grow(), newLength(), copy() 변경
+    - createCSV() 삭제
+  - get() 변경
+    - indexOf() 변경
+  - update() 변경
+  - delete() 변경
 
 
+## 프론트엔드 개발 실습
 
+### 1단계 - 연락처 정보를 한 단위로 묶어서 다룰 새 데이터 타입을 정의한다.
 
 
 
