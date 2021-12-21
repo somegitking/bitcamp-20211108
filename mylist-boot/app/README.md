@@ -1,64 +1,32 @@
-# 02 메서드 다루기
+# 03 클래스 사용법 1 : 사용자 정의 데이터 타입 만들기
 
-- 특정 기능을 수행하는 코드에 대해 메서드로 정의해두면 재사용이 쉽고 코드 유지보수가 쉽다.
-- 코드를 메서드로 분리하는 경우
-  - 유사한 코드가 여러 곳에서 중복 사용될 때
-  - 코드의 기능을 명확하게 설명하고 싶을 때
+- 회원정보, 영화정보, 주문정보와 같은 복합 데이터는 낱개의 변수를 사용하여 다루는 것 보다
+  별도의 타입을 정의하여 *한 단위로 묶어서* 다루는 것이 편하다.
+  - 복합데이터: 여러 개의 항목으로 구성된 데이터
+  - 예) 회원정보(번호,이름,이메일,전화,주소 등), 영화정보(영화명,설명, 제작사, 주연배우, 개봉일 등)
+- 자바에서 제공하지 않는 데이터 타입을 정의할 때 사용하는 문법이 **클래스** 이다.
+
 
 
 ## 백엔드 개발 실습
 
-### 1단계 - 한 사람의 연락처 정보를 문자열로 만드는 코드를 메서드로 분리한다.
+### 1단계 - 연락처 정보를 한 단위로 묶어서 다룰 새 데이터 타입을 정의한다.
 
-- ContactController.createCSV() 정의
+- com.eomcs.mylist.Contact 클래스 정의
+
+
+### 2단계 - 연락처 목록은 Contact 클래스의 배열로 변경한다.
+
+- com.eomcs.mylist.ContactController 클래스 변경
+  - 배열 변수 변경
+
+### 3단계 - REST API에 Contact 클래스를 적용한다.
+
+- com.eomcs.mylist.ContactController 클래스 변경
+  - list() 변경 => 웹브라우저로 응답 결과 확인
   - add() 변경
-  - update() 변경
-  - 백업: ContactController.java.01
 
-### 2단계 - 이메일로 연락처를 찾아 배열 인덱스를 알아내는 코드를 분리한다.
 
-- ContactController.indexOf() 정의
-  - get() 변경
-  - update() 변경
-  - 백업: ContactController.java.02
-
-### 3단계 - 배열 항목 삭제 코드를 분리한다.
-
-코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
-
-- ContactController.remove() 정의
-  - delete() 변경
-  - 백업: ContactController.java.03
-
-### 4단계 - 배열 크기를 자동으로 늘린다.
-
-- ContactController.add() 변경
-  - 배열이 꽉차면 새 배열을 만들어 확장한다.
-  - 백업: ContactController.java.04
-
-### 5단계 - 배열 크기를 늘리는 코드를 별도의 메서드로 분리한다.
-
-코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
-
-- ContactController.grow() 생성
-  - add() 변경
-  - 백업: ContactController.java.05
-
-### 6단계 - 배열 크기를 계산하는 코드를 별도의 메서드로 분리한다.
-
-코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
-
-- ContactController.newLength() 생성
-  - grow() 변경
-  - 백업: ContactController.java.06
-
-### 7단계 - 배열을 복사하는 코드를 메서드로 분리한다.
-
-코드 기능을 명확하게 설명하고 싶을 때도 메서드를 활용하여 코드를 분리한다.
-
-- ContactController.copy() 생성
-  - grow() 변경
-  - 백업: ContactController.java.07
 
 
 
