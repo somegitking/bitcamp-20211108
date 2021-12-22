@@ -210,11 +210,24 @@ https://meet.google.com/cyz-mbfk-qaa
   - 메서드 사용법(계속; Exam0440 ~ )
 
 ## 32일차(2021-12-21,화)
-- 자바 객체지향 프로그래밍(com.eomcs.oop)
 - MyList 프로젝트 실습(Ver. 03)
   - 자바 클래스 다루기
   - 자바스크립트 객체 다루기
 - 자바스크립트
   - 객체 사용법: ex04/
+
+## 33일차(2021-12-22,수)
+- 자바스크립트(eomcs-web/javascript)
+  - 객체 사용법: ex04/(계속)
+  - DOM API 사용법
+- CSS(eomcs-web/css)
+  - 셀렉터 문법: 01 ~ 03
+
+
+## 34일차(2021-12-23,목)
+- 자바스크립트(eomcs-web/javascript)
+  - DOM API 사용법(계속)
+
+
 
 ##
