@@ -219,7 +219,7 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 33일차(2021-12-22,수)
 - 자바스크립트(eomcs-web/javascript)
   - 객체 사용법: ex04/(계속)
-  - DOM API 사용법
+  - DOM API 사용법: ex05/
 - CSS(eomcs-web/css)
   - 셀렉터 문법: 01 ~ 03
 
@@ -227,10 +227,10 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 34일차(2021-12-23,목)
 - 자바스크립트(eomcs-web/javascript)
   - 자바스크립트 상속 기법과 구동원리
-  - DOM API 사용법(계속)
+  - DOM API 사용법: ex05/ (계속)
 
 ## 35일차(2021-12-24,금)
 - 자바스크립트(eomcs-web/javascript)
-  - 이벤트 다루기
+  - 이벤트 다루기: ex06/
 
 ##
