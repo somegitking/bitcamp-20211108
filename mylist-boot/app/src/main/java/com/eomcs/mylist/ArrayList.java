@@ -89,7 +89,7 @@ public class ArrayList {
   //   - 변경하기 전에 저장되어 있던 값
   //
   static Contact set(int index, Contact contact) {
-    if (index < 0 && index >= size) { // 값이 저장된 위치가 무효한 인덱스라면 
+    if (index < 0 || index >= size) { // 값이 저장된 위치가 무효한 인덱스라면 
       return null;
     }
     Contact old = contacts[index];

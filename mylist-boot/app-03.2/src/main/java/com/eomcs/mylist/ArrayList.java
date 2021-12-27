@@ -12,7 +12,7 @@ public class ArrayList {
   static int indexOf(String email) {
     for (int i = 0; i < size; i++) {
       Contact contact = contacts[i];
-      if (contact.email.equals(email)) { 
+      if (contact.email.equals(email)) {
         return i;
       }
     }
@@ -48,9 +48,9 @@ public class ArrayList {
     return contacts.length + (contacts.length >> 1);
   }
 
-  // 기능: 
+  // 기능:
   // - 배열을 복사한다.
-  // 
+  //
   static void copy(Contact[] source, Contact[] target) {
     int length = source.length;
     if (target.length < source.length) {
@@ -65,11 +65,11 @@ public class ArrayList {
   // - 배열에 저장된 목록만 꺼내 새 배열에 담아 리턴한다.
   //
   static Contact[] toArray() {
-    Contact[] arr = new Contact[size]; 
-    for (int i = 0; i < size; i++) { 
-      arr[i] = contacts[i]; 
+    Contact[] arr = new Contact[size];
+    for (int i = 0; i < size; i++) {
+      arr[i] = contacts[i];
     }
-    return arr; 
+    return arr;
   }
 
   // 기능:
@@ -77,7 +77,7 @@ public class ArrayList {
   // - 배열이 꽉찼으면 배열의 크기를 늘린다.
   //
   static void add(Contact contact) {
-    if (size == contacts.length) { 
+    if (size == contacts.length) {
       contacts = grow();
     }
     contacts[size++] = contact;
@@ -85,11 +85,11 @@ public class ArrayList {
 
   // 기능:
   // - 배열의 특정 위치에 값을 변경한다.
-  // - 리턴 값: 
+  // - 리턴 값:
   //   - 변경하기 전에 저장되어 있던 값
   //
   static Contact set(int index, Contact contact) {
-    if (index < 0 && index >= size) { // 값이 저장된 위치가 무효한 인덱스라면 
+    if (index < 0 || index >= size) { // 값이 저장된 위치가 무효한 인덱스라면 
       return null;
     }
     Contact old = contacts[index];
@@ -97,13 +97,3 @@ public class ArrayList {
     return old;
   }
 }
-
-
-
-
-
-
-
-
-
-

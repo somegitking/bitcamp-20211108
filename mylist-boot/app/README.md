@@ -7,24 +7,26 @@
 
 ### 1단계 - TodoList 요청을 처리할 REST API를 만든다.
 
+- com.eomcs.mylist.Todo 클래스 생성
+  - 해야 할 일 데이터를 저장할 수 있는 메모리를 설계한다.
+  - Todo 데이터 타입을 정의한다.
+- com.eomcs.mylist.ArrayList2 클래스 생성
+  - Todo 배열을 다룰 클래스를 정의한다.
+  - ArrayList 클래스를 복사해서 변경한다.
 - com.eomcs.mylist.TodoController 클래스 생성
   - ContactController를 복사해서 변경한다.
 
 
-### 2단계 - 코드 정리
-
-- com.eomcs.mylist.ContactController 변경
-  - list() 변경: 저장된 목록을 가져오는 코드를 ArrayList.toArray()로 옮긴다.
-  - add() 변경: 배열에 항목을 추가하고, 배열의 크기를 늘리는 코드를 ArrayList.add()로 옮긴다.
-  - update() 변경: 배열에서 특정 항목을 다른 값으로 교체하는 코드를 ArrayList.set()으로 옮긴다.
-- com.eomcs.mylist.ArrayList 변경
-  - toArray() 추가: 배열에 저장된 항목들을 꺼내 새 배열에 담아 리턴한다.
-  - add() 추가: 배열에 항목을 추가한다.
-  - set() 추가: 배열의 특정 위치의 값을 변경한다.
-
 ## 프론트엔드 개발 실습
 
+### 1단계 - TodoList 목록 출력 화면을 만든다.
 
+- /index.html 변경
+  - Todo 메뉴 추가
+- /todo/index.html 생성
+  - /contact/index.html을 복사해서 변경한다.
+- /todo/form.html 생성
+  - /contact/form.html을 복사해서 변경한다.
 
 
 
