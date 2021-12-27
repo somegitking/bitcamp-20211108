@@ -38,8 +38,13 @@
   - index-05.html: 삭제 버튼을 서버의 REST API와 연동하기
   - index-06.html: 삭제 버튼에 리스너 등록하기 II
 
-### 3단계 - Todo 변경 기능 추가한다.
+### 3단계 - Todo 체크 기능 추가한다.
 
+- /todo/index.html 변경
+  - index-07.html: 체크 박스 추가하기
+  - index-08.html: 체크 박스에 리스너 등록하기
+  - index-09.html: 체크 박스를 선택할 때 제목에 취소선 토글하기
+  - index-10.html: 체크 박스를 서버의 REST API와 연동하기
 
 
 
