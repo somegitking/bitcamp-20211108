@@ -18,7 +18,7 @@
 
 ## 프론트엔드 개발 실습
 
-### 1단계 - TodoList 목록 출력 화면을 만든다.
+### 1단계 - Todo 목록 출력 화면을 만든다.
 
 - /index.html 변경
   - Todo 메뉴 추가
@@ -29,11 +29,16 @@
   - index-00.html: To-do 목록 화면 구성하기
   - index-01.html: 서버에서 목록 가져오기
   - index-02.html: 동적으로 tr 태그 만들기
+
+### 2단계 - Todo 삭제 기능 추가한다.
+
+- /todo/index.html 변경
   - index-03.html: 삭제 버튼 추가하기
   - index-04.html: 삭제 버튼에 리스너 등록하기
   - index-05.html: 삭제 버튼을 서버의 REST API와 연동하기
   - index-06.html: 삭제 버튼에 리스너 등록하기 II
-  - 
+
+### 3단계 - Todo 변경 기능 추가한다.
 
 
 
