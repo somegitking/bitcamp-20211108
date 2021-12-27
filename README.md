@@ -233,4 +233,12 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바스크립트(eomcs-web/javascript)
   - 이벤트 다루기: ex06/
 
+## 36일차(2021-12-27,월)
+
+
+
+
+
+
+
 ##
