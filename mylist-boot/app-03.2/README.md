@@ -1,14 +1,17 @@
-# 03.3 클래스 사용법 : 다형적 변수 활용
+# 03.2 클래스 사용법 : 메서드를 분류하기
 
-- 다양한 타입의 객체 주소를 받을 수 있는 레퍼런스 변수를 활용하기
-- TodoList 만들기
+- 클래스 문법의 또 다른 용도는 유지보수하기 좋게 메서드를 분류하는 것이다.
 
 ## 백엔드 개발 실습
 
-### 1단계 - TodoList 요청을 처리할 REST API를 만든다.
+### 1단계 - 배열을 다루는 메서드를 별도의 클래스로 분류한다.
 
-- com.eomcs.mylist.TodoController 클래스 생성
-  - ContactController를 복사해서 변경한다.
+- com.eomcs.mylist.ArrayList 클래스 생성
+  - ContactController에서 배열을 다루는 메서드를 가져온다.
+  - 백업: ArrayList.java.01
+- com.eomcs.mylist.ContactController 변경
+  - 배열 관련 메서드를 ArrayList로 옮긴다.
+  - 백업: ContactController.java.01
 
 
 ### 2단계 - 코드 정리

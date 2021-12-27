@@ -13,14 +13,8 @@ public class ContactController {
 
   @RequestMapping("/contact/add")
   public Object add(Contact contact) {
-    System.out.println(contact);
-
-    if (ArrayList.size == ArrayList.contacts.length) { 
-      ArrayList.contacts = ArrayList.grow(); 
-    }
-
-    ArrayList.contacts[ArrayList.size++] = contact;
-
+    //    System.out.println(contact);
+    ArrayList.add(contact);
     return ArrayList.size;
   }
 
@@ -42,8 +36,7 @@ public class ContactController {
       return 0;
     }
 
-    ArrayList.contacts[index] = contact;
-    return 1;
+    return ArrayList.set(index, contact) == null ? 0 : 1;
   }
 
   @RequestMapping("/contact/delete")
@@ -53,7 +46,7 @@ public class ContactController {
       return 0;
     }
 
-    ArrayList.remove(index);  // 메서드 이름으로 코드의 의미를 짐작할 수 있다. 이것이 메서드로 분리하는 이유이다.
+    ArrayList.remove(index);
     return 1;
   }
 }
