@@ -1,4 +1,4 @@
-# 다형성의 활용: 다형적 변수의 특징
+# 04 다형성의 활용: 다형적 변수의 특징
 
 - 기존의 ArrayList의 배열 타입을 Object 로 변경한다.
 
@@ -23,4 +23,4 @@
 
 - com.eomcs.mylist.ArrayList2 클래스 변경
   - ArrayList 코드를 그대로 가져온다.
-  
+  - 레퍼런스 배열의 타입을 Object로 변경하니까 ArrayList를 복사했을 때 변경할 게 없다.
