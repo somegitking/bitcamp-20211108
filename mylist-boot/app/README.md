@@ -1,26 +1,29 @@
-# 04 다형성의 활용: 다형적 변수의 특징
+# 04.2 다형성의 활용 : 다형적 변수 활용 연습
 
-- 기존의 ArrayList의 배열 타입을 Object 로 변경한다.
+- 게시글 목록 기능을 추가한다.
 
 ## 백엔드 개발 실습
 
-### 1단계 - ArrayList의 레퍼런스 배열이 다양한 타입의 객체를 주소를 받을 수 있도록 Object[] 타입으로 변경한다.
+### 1단계 - 게시글 요청을 처리할 REST API를 만든다.
 
-- com.eomcs.mylist.ArrayList 클래스 변경
-  - Contact[] 타입을 Object[] 타입으로 변경한다.
-  - add()의 파라미터 타입 변경
-  - grow()의 리턴 타입 변경
-  - newLength()에서 레퍼런스 배열 이름 변경
-  - toArray()의 리턴 타입 변경
-  - remove()의 리턴 타입 변경
-  - set() 파라미터 타입 변경
-  - indexOf()를 ContactController로 이동한다.
+- com.eomcs.mylist.Board 클래스 생성
+  - 게시글 데이터를 저장할 수 있는 메모리를 설계한다.
+  - 게시글 데이터 타입을 정의한다.
+- com.eomcs.mylist.ArrayList3 클래스 생성
+  - Board 배열을 다룰 클래스를 정의한다.
+  - ArrayList 클래스를 복사한다.
+- com.eomcs.mylist.BoardController 클래스 생성
+  - ContactController를 복사해서 변경한다.
 
-- com.eomcs.mylist.ContactController 클래스 변경
-  - indexOf() 메서드 추가
+## 프론트엔드 개발 실습
 
-### 2단계 - ArrayList를 그대로 복사해서 ArrayList2 로 만든다.
+### 1단계 - 게시글 목록 출력 화면을 만든다.
 
-- com.eomcs.mylist.ArrayList2 클래스 변경
-  - ArrayList 코드를 그대로 가져온다.
-  - 레퍼런스 배열의 타입을 Object로 변경하니까 ArrayList를 복사했을 때 변경할 게 없다.
+- /index.html 변경
+  - 게시글 메뉴 추가
+- /board/form.html 생성
+  - /contact/form.html을 복사해서 변경한다.
+- /board/index.html 생성
+  - /contact/index.html을 복사해서 변경한다.
+- /board/view.html 생성
+  - /contact/view.html을 복사해서 변경한다.
