@@ -246,7 +246,7 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - MyList 프로젝트 실습(Ver. 03.3)(계속)
   - 클래스 사용법: 클래스 활용 연습(데이터 타입 + 메서드 분류)
-  - 자바스크립트, DOM API, 이벤트 처리 활용법
+  - 자바스크립트, DOM API, 이벤트 처리 연습
 
 
 
