@@ -58,6 +58,8 @@
   - index-15.html: span 태그를 사용하여 Todo 제목의 출력을 제어한다.
   - index-16.html: Todo 입력 상자에 keyup 이벤트 리스너를 등록한다.
   - index-17.html: Todo 제목을 변경한 후 엔터 키를 쳤을 때 서버에 보낸다.
+  - index-18.html: 태그를 찾는 방식 정리.
+  - index-19.html: Todo 편집 상태에서 ESC 키 눌렀을 때 편집 취소한다.
 
 
 
