@@ -46,11 +46,10 @@ public class BoardController {
 
   @RequestMapping("/board/delete")
   public Object delete(int index) {
-    if (index < 0 || index >= ArrayList3.size) {
-      return 0;
-    }
-    ArrayList3.remove(index);
-    return 1;
+    //    if (index < 0 || index >= ArrayList3.size) {
+    //      return 0;
+    //    }
+    return ArrayList3.remove(index) == null ? 0 : 1;
   }
 }
 
