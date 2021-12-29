@@ -1,29 +1,29 @@
-# 04.2 다형성의 활용 : 게시글 목록 만들기
+# 05.1 인스턴스 멤버 사용법: 인스턴스 필드 활용하기
 
-- 게시글 목록 기능을 추가한다.
+- 인스턴스 필드를 사용하여 ArrayList 코드를 공유하기
 
 ## 백엔드 개발 실습
 
-### 1단계 - 게시글 요청을 처리할 REST API를 만든다.
+### 1단계 - ArrayList의 배열 관련 변수를 인스턴스 필드로 전환한다.
 
-- com.eomcs.mylist.Board 클래스 생성
-  - 게시글 데이터를 저장할 수 있는 메모리를 설계한다.
-  - 게시글 데이터 타입을 정의한다.
-- com.eomcs.mylist.ArrayList3 클래스 생성
-  - Board 배열을 다룰 클래스를 정의한다.
-  - ArrayList 클래스를 복사한다.
-- com.eomcs.mylist.BoardController 클래스 생성
-  - ContactController를 복사해서 변경한다.
+- com.eomcs.mylist.ArrayList 클래스 변경
+  - 레퍼런스 배열과 size 변수를 인스턴스 필드로 바꾼다.
 
-## 프론트엔드 개발 실습
+### 2단계 - 기존의 메서드를 인스턴스 필드로 사용하도록 변경한다.
 
-### 1단계 - 게시글 목록 출력 화면을 만든다.
+- com.eomcs.mylist.ArrayList 클래스 변경
+  - ArrayList의 인스턴스 주소를 파라미터로 넘기도록 메서드를 변경한다.
+  - 기존 메서드는 파라미터로 받은 ArrayList 인스턴스 변수(list 배열과 size)를 사용한다.
 
-- /index.html 변경
-  - 게시글 메뉴 추가
-- /board/form.html 생성
-  - /contact/form.html을 복사해서 변경한다.
-- /board/index.html 생성
-  - /contact/index.html을 복사해서 변경한다.
-- /board/view.html 생성
-  - /contact/view.html을 복사해서 변경한다.
+### 3단계 - ArrayList 변경에 맞춰 페이지 컨트롤러 클래스를 변경한다.
+
+- com.eomcs.mylist.ContactController 클래스 변경
+  - Contact 객체의 목록을 저장할 배열을 ArrayList 설계도에 따라 만든다.
+  
+
+
+
+
+
+
+#
