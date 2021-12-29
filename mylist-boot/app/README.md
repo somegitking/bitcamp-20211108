@@ -19,7 +19,13 @@
 
 - com.eomcs.mylist.ContactController 클래스 변경
   - Contact 객체의 목록을 저장할 배열을 ArrayList 설계도에 따라 만든다.
-  
+  - 클라이언트 요청을 처리하는 메서드에서 ArrayList의 메서드를 호출할 때 항상 ArrayList 인스턴스 주소를 알려준다.
+- com.eomcs.mylist.TodoController 클래스 변경
+  - Todo 객체의 목록을 저장할 배열을 ArrayList 설계도에 따라 만든다.
+  - 클라이언트 요청을 처리하는 메서드에서 ArrayList의 메서드를 호출할 때 항상 ArrayList 인스턴스 주소를 알려준다.
+- com.eomcs.mylist.BoardController 클래스 변경
+  - Board 객체의 목록을 저장할 배열을 ArrayList 설계도에 따라 만든다.
+  - 클라이언트 요청을 처리하는 메서드에서 ArrayList의 메서드를 호출할 때 항상 ArrayList 인스턴스 주소를 알려준다.
 
 
 

@@ -9,18 +9,18 @@ public class ContactController {
   // Contact 객체 목록을 저장할 메모리 준비
   // => Object[] list = new Object[5];
   // => int size = 0;
-  ArrayList contacts = new ArrayList();
+  ArrayList contactList = new ArrayList();
 
   @RequestMapping("/contact/list")
   public Object list() {
-    return ArrayList.toArray(contacts); 
+    return ArrayList.toArray(contactList); 
   }
 
   @RequestMapping("/contact/add")
   public Object add(Contact contact) {
     //    System.out.println(contact);
-    ArrayList.add(contacts, contact);
-    return contacts.size;
+    ArrayList.add(contactList, contact);
+    return contactList.size;
   }
 
 
@@ -30,7 +30,7 @@ public class ContactController {
     if (index == -1) {
       return "";
     }
-    return contacts.list[index];
+    return contactList.list[index];
   }
 
   @RequestMapping("/contact/update")
@@ -40,7 +40,7 @@ public class ContactController {
       return 0;
     }
 
-    return ArrayList.set(contacts, index, contact) == null ? 0 : 1;
+    return ArrayList.set(contactList, index, contact) == null ? 0 : 1;
   }
 
   @RequestMapping("/contact/delete")
@@ -50,13 +50,13 @@ public class ContactController {
       return 0;
     }
 
-    ArrayList.remove(contacts, index);
+    ArrayList.remove(contactList, index);
     return 1;
   }
 
   int indexOf(String email) {
-    for (int i = 0; i < contacts.size; i++) {
-      Contact contact =  (Contact) contacts.list[i];
+    for (int i = 0; i < contactList.size; i++) {
+      Contact contact =  (Contact) contactList.list[i];
       if (contact.email.equals(email)) { 
         return i;
       }
