@@ -267,7 +267,7 @@ https://meet.google.com/cyz-mbfk-qaa
   - 05.2 인스턴스 멤버 사용법: 인스턴스 메서드 활용하기
   - 06.1 패키지 사용법: 클래스 분류하기 + public 접근 제어
 - 자바 OOP 문법(com.eomcs.oop)
-  - 
+  - ex01: 인스턴스와 레퍼런스, 가비지 소개
 
 
 ##
