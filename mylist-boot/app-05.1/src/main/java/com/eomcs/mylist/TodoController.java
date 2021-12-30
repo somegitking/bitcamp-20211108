@@ -11,12 +11,12 @@ public class TodoController {
 
   @RequestMapping("/todo/list")
   public Object list() {
-    return todoList.toArray(); 
+    return ArrayList.toArray(todoList); 
   }
 
   @RequestMapping("/todo/add")
   public Object add(Todo todo) {
-    todoList.add(todo);
+    ArrayList.add(todoList, todo);
     return todoList.size;
   }
 
@@ -26,10 +26,7 @@ public class TodoController {
       return 0;
     }
 
-    Todo old = (Todo) todoList.list[index];
-    todo.done = old.done; // 기존의 체크 정보를 그대로 가져가야 한다.
-
-    return todoList.set(index, todo) == null ? 0 : 1;
+    return ArrayList.set(todoList, index, todo) == null ? 0 : 1;
   }
 
   @RequestMapping("/todo/check")
@@ -48,7 +45,7 @@ public class TodoController {
       return 0;
     }
 
-    todoList.remove(index);
+    ArrayList.remove(todoList, index);
     return 1;
   }
 }
