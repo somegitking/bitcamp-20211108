@@ -273,7 +273,8 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - 자바 OOP 문법(com.eomcs.oop)
   - ex01: 인스턴스와 레퍼런스, 가비지 소개(계속)
-
+  - ex02: 클래스 문법의 개략적 용도
+  - ex03: 인스턴스 멤버와 클래스 멤버
 
 
 
