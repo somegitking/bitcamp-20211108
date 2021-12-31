@@ -269,5 +269,15 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바 OOP 문법(com.eomcs.oop)
   - ex01: 인스턴스와 레퍼런스, 가비지 소개
 
+## 40일차(2021-12-31,금)
+
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex01: 인스턴스와 레퍼런스, 가비지 소개(계속)
+
+
+
+
+
+
 
 ##
