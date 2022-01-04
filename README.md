@@ -276,9 +276,11 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex02: 클래스 문법의 개략적 용도
   - ex03: 인스턴스 멤버와 클래스 멤버
 
+
 ## 41일차(2022-01-04,화)
 
-
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex03: 인스턴스 멤버와 클래스 멤버(계속)
 
 
 
