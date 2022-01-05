@@ -286,5 +286,6 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - 자바 OOP 문법(com.eomcs.oop)
   - ex03: 인스턴스 멤버와 클래스 멤버(계속)
-
+  - ex04: String 클래스의 생성자 사용법, 문자 집합과 문자 코드
+  
 ##
