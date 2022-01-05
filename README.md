@@ -282,6 +282,9 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바 OOP 문법(com.eomcs.oop)
   - ex03: 인스턴스 멤버와 클래스 멤버(계속)
 
+## 42일차(2022-01-05,수)
 
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex03: 인스턴스 멤버와 클래스 멤버(계속)
 
 ##
