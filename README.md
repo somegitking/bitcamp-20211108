@@ -291,7 +291,10 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 43일차(2022-01-06,목)
 
 - 자바 OOP 문법(com.eomcs.oop)
-  - ex04: String 클래스의 생성자 사용법, 문자 집합과 문자 코드(계속)
-
+  - ex04: String, Date, Calendar 클래스의 생성자 사용법, 문자 집합과 문자 코드(계속)
+- 자바 기본 클래스 사용법(com.eomcs.basic)
+  - ex02: String 클래스 사용법
+- MyList 프로젝트 실습
+  - 06.2 패키지 사용법: 독서록 만들기
 
 ##
