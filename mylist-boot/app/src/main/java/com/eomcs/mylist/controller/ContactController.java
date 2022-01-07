@@ -66,11 +66,7 @@ public class ContactController {
     Object[] arr = contactList.toArray();
     for (Object obj : arr) {
       Contact contact = (Contact) obj;
-      out.write(contact.getName() + "," + 
-          contact.getEmail() + "," + 
-          contact.getTel() + "," +
-          contact.getCompany() + 
-          "\n");
+      out.write(contact.toCsvString() + "\n");
     }
 
     out.close();
