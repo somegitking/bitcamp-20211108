@@ -24,7 +24,9 @@ public class Book {
     this.setPress(values[2]);
     this.setPage(Integer.valueOf(values[3]));
     this.setPrice(Integer.valueOf(values[4]));
-    this.setReadDate(Date.valueOf(values[5]));
+    if (!values[5].equals("null")) {
+      this.setReadDate(Date.valueOf(values[5]));
+    }
     this.setFeed(values[6]);
   }
 
@@ -47,7 +49,9 @@ public class Book {
     book.setPress(values[2]);
     book.setPage(Integer.valueOf(values[3]));
     book.setPrice(Integer.valueOf(values[4]));
-    book.setReadDate(Date.valueOf(values[5]));
+    if (!values[5].equals("null")) {
+      book.setReadDate(Date.valueOf(values[5]));
+    }
     book.setFeed(values[6]);
 
     return book;
