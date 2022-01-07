@@ -21,6 +21,7 @@ public class ContactController {
     StringBuilder buf = new StringBuilder();
     int c;
     while (true) {
+
       c = in.read(); // 파일에서 한 문자를 읽는다.
 
       if (c == -1) // 더이상 읽을 문자가 없다면 반복문을 종료한다.
