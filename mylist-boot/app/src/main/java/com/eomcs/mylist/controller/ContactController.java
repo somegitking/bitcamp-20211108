@@ -1,5 +1,6 @@
 package com.eomcs.mylist.controller;
 
+import java.io.FileReader;
 import java.io.FileWriter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,9 +12,39 @@ public class ContactController {
 
   ArrayList contactList;
 
-  public ContactController() {
+  public ContactController() throws Exception {
     contactList = new ArrayList();
     System.out.println("ContactController() 호출됨!");
+
+    FileReader in = new FileReader("contacts.csv");
+
+    StringBuilder buf = new StringBuilder();
+    int c;
+    while (true) {
+      c = in.read();
+      if (c == -1)
+        break;
+
+      if (c == '\n') {
+        String csvStr = buf.toString(); // 예) "홍길동,hong@test.com,010-1111-2222,비트캠프"
+        String[] values = csvStr.split(","); // 예) ["홍길동","hong@test.com","010-1111-2222","비트캠프"]
+
+        Contact contact = new Contact();
+        contact.setName(values[0]);
+        contact.setEmail(values[1]);
+        contact.setTel(values[2]);
+        contact.setCompany(values[3]);
+
+        contactList.add(contact);
+
+        buf.setLength(0);
+
+      } else {
+        buf.append((char) c);
+      }
+    }
+
+    in.close();
   }
 
   @RequestMapping("/contact/list")
