@@ -8,12 +8,9 @@
 
 - com.eomcs.mylist.Book 클래스 생성
   - 독서록 데이터를 저장할 수 있는 메모리를 설계한다.
-  - 독서록 데이터 타입을 정의한다.
-- com.eomcs.mylist.ArrayList3 클래스 생성
-  - Board 배열을 다룰 클래스를 정의한다.
-  - ArrayList 클래스를 복사한다.
-- com.eomcs.mylist.BoardController 클래스 생성
-  - ContactController를 복사해서 변경한다.
+  - setter/getter 추가한다.
+- com.eomcs.mylist.BookController 클래스 생성
+  - BoardController를 복사해서 변경한다.
 
 ## 프론트엔드 개발 실습
 
