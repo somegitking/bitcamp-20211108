@@ -1,29 +1,21 @@
-# 06.2 패키지 사용법: 독서록 만들기
+# 07.1 파일 API 활용: 데이터를 텍스트 형식(CSV)으로 읽고 쓰기
 
-- 독서록 관리 기능을 추가한다.
+- 데이터를 파일에 저장하고 읽는다.
 
 ## 백엔드 개발 실습
 
-### 1단계 - 독서록 요청을 처리할 REST API를 만든다.
+### 1단계 - 데이터 저장 요청을 받았을 때 파일로 데이터를 저장한다.
 
-- com.eomcs.mylist.Book 클래스 생성
-  - 독서록 데이터를 저장할 수 있는 메모리를 설계한다.
-  - setter/getter 추가한다.
-- com.eomcs.mylist.BookController 클래스 생성
-  - BoardController를 복사해서 변경한다.
+- com.eomcs.mylist.ContactController 클래스 변경
+  - save() 메서드 추가
+
+### 2단계 - 페이지 컨트롤러 객체가 생성될 때 파일에서 데이터를 로딩한다.
+
+- com.eomcs.mylist.BookController 클래스 변경
+  - 생성자에 파일 읽기 코드 추가
 
 ## 프론트엔드 개발 실습
 
-### 1단계 - 독서록 관리 화면을 만든다.
-
-- /index.html 변경
-  - 독서록 메뉴 추가
-- /book/form.html 생성
-  - /board/form.html을 복사해서 변경한다.
-- /book/index.html 생성
-  - /board/index.html을 복사해서 변경한다.
-- /book/view.html 생성
-  - /board/view.html을 복사해서 변경한다.
 
 
 
