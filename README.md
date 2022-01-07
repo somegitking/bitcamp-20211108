@@ -301,6 +301,7 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - MyList 프로젝트 실습
   - 06.2 패키지 사용법: 독서록 만들기
+  - 07.1 파일 API 활용: 데이터를 텍스트 형식(CSV)으로 읽고 쓰기
 
 
 
