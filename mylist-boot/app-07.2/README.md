@@ -4,7 +4,7 @@
 
 ## 백엔드 개발 실습
 
-### 1단계 - FileReader 클래스을 기능을 확장한다.
+### 1단계 - FileReader 클래스의 기능을 확장한다.
 
 - com.eomcs.io.FileReader2 클래스 생성
   - FileReader를 상속 받아 FileReader2 클래스를 정의한다.
