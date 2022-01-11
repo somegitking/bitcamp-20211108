@@ -312,7 +312,10 @@ https://meet.google.com/cyz-mbfk-qaa
   - 07.3 파일 API 활용: 포함 관계를 이용해 읽고 쓰기 기능 확장
 
 
+## 46일차(2022-01-11,화)
 
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex05: 상속 문법
 
 
 ##
