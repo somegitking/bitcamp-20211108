@@ -315,7 +315,12 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 46일차(2022-01-11,화)
 
 - 자바 OOP 문법(com.eomcs.oop)
-  - ex05: 상속 문법
+  - ex05: 상속 문법(계속)
 
+
+## 47일차(2022-01-12,수)
+
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex06: 다형성
 
 ##
