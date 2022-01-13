@@ -323,4 +323,9 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바 OOP 문법(com.eomcs.oop)
   - ex06: 다형성
 
+## 48일차(2022-01-13,목)
+
+- MyList 프로젝트 실습
+  - 07.2 파일 API 활용: ?
+
 ##
