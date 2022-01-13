@@ -325,6 +325,8 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 48일차(2022-01-13,목)
 
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex05.x2~x4: 기능을 확장하는 다양한 방법
 - MyList 프로젝트 실습
   - 07.2 파일 API 활용: ?
 
