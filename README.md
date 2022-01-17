@@ -330,10 +330,23 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex05.x3: 기존 코드 복제 후 기능 확장
   - ex05.x4: 상속을 받아서 기능 확장
   - ex05.x5: 데코레이터 설계 기법을 이용한 기능 확장
-- I/O 스트림 문법(com.eomcs.io)
-  - ex01: 파일시스템 개요 및 File 클래스 사용법
 - MyList 프로젝트 실습
   - 07.4 파일 API 활용: 데코레이터 패턴을 이용한 읽고 쓰기 기능 확장
+
+## 49일차(2022-01-14,금)
+
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex05.x6: 기능 추가의 다양한 기법 연습
+    - 상속: generalization, specialization
+    - 데코레이터 설계 패턴 연습
+- I/O 스트림 문법(com.eomcs.io)
+  - ex01: 파일시스템 개요 및 File 클래스 사용법
+
+## 50일차(2022-01-17,월)
+
+- I/O 스트림 문법(com.eomcs.io)
+  - ex01: File 클래스 사용법(계속)
+
 
 
 ##
