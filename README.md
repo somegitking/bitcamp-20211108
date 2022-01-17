@@ -346,7 +346,9 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - I/O 스트림 문법(com.eomcs.io)
   - ex01: File 클래스 사용법(계속)
-
+  - ex02: FileOutputStream/FileInputStream 사용법
+    - 바이트 스트림으로 문자열을 다루는 방법
+    
 
 
 ##
