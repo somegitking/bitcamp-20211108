@@ -353,5 +353,10 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - I/O 스트림 문법(com.eomcs.io)
   - ex03: FileWriter/FileReader 사용법
+  - ex04: 자바 원시 타입(primitive type)의 데이터를 입출력 하는 방법
+  - ex05: 상속을 이용하여 입출력 기능(primitive type의 데이터 입출력) 확장하기
+  - ex06: 버퍼를 사용해야 하는 이유와 입출력에 적용하는 방법
+  - 0x07: 상속을 이용한 기능 확장의 한계를 이해하기
+
 
 ##
