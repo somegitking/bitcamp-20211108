@@ -348,7 +348,10 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex01: File 클래스 사용법(계속)
   - ex02: FileOutputStream/FileInputStream 사용법
     - 바이트 스트림으로 문자열을 다루는 방법
-    
 
+## 51일차(2022-01-18,화)
+
+- I/O 스트림 문법(com.eomcs.io)
+  - ex03: FileWriter/FileReader 사용법
 
 ##
