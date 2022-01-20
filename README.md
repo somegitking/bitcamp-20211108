@@ -364,11 +364,17 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex08: 포함관계를 이용한 기능 확장 및 한계
   - ex09: 데코레이터 패턴을 이용한 기능 확장
   - ex10: java.io 패키지의 클래스를 사용하기
-  - ex11: 인스턴스 직렬화
+  - ex11: 인스턴스 직렬화, serialVersionUID, transient
 - MyList 프로젝트 실습
   - 07.5 파일 API 활용: 데이터를 바이너리 형식으로 읽고 쓰기
   - 07.6 파일 API 활용: 데이터를 객체 단위로 읽고 쓰기
 
+## 53일차(2022-01-20,목)
+
+- I/O 스트림 문법(com.eomcs.io)
+  - ex11: 인스턴스 직렬화, serialVersionUID, transient(계속)
+- 자바 기본 클래스(com.eomcs.basic)
+  - ex01: Object 클래스
 
 
 
