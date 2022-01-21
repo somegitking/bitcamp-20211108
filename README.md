@@ -383,7 +383,8 @@ https://meet.google.com/cyz-mbfk-qaa
     - shallow/deep copy
   - ex02: Wrapper 클래스 사용법
 - 미니 프로젝트(project-app1)
-  - 계산기 만들기
+  - 계산기 만들기(1단계 ~ 8단계)
+  - 클라이언트/서버 애플리케이션 만들기 소개
 
 
 
