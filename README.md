@@ -376,6 +376,16 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바 기본 클래스(com.eomcs.basic)
   - ex01: Object 클래스
 
+## 54일차(2022-01-21,금)
+
+- 자바 기본 클래스(com.eomcs.basic)
+  - ex01: Object 클래스(계속)
+    - shallow/deep copy
+  - ex02: Wrapper 클래스 사용법
+- 미니 프로젝트(project-app1)
+  - 계산기 만들기
+
+
 
 
 ##
