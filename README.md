@@ -388,5 +388,7 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 55일차(2022-01-24,월)
 
+- MyList 프로젝트 실습
+  - 07.7 파일 API 활용: 데이터를 JSON 형식으로 읽고 쓰기
 
 ##

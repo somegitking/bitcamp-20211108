@@ -73,7 +73,6 @@ public class ArrayList implements java.io.Serializable {
   public Object get(int index) {
     return this.list[index];
   }
-
 }
 
 
