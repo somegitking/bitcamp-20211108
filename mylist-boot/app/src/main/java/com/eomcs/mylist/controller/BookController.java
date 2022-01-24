@@ -23,11 +23,12 @@ public class BookController {
       BufferedReader in = new BufferedReader(new FileReader("books.json"));
 
       ObjectMapper mapper = new ObjectMapper();
-      Book[] books = mapper.readValue(in.readLine(), Book[].class);
 
-      for (Book book : books) {
-        bookList.add(book);
-      }
+      //      String jsonStr = in.readLine();
+      //      Book[] books = mapper.readValue(jsonStr, Book[].class);
+      //      bookList = new ArrayList(books);
+
+      bookList = new ArrayList(mapper.readValue(in.readLine(), Book[].class));
 
       in.close();
 

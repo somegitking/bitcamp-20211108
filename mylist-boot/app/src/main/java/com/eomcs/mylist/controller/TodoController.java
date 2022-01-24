@@ -23,11 +23,7 @@ public class TodoController {
       BufferedReader in = new BufferedReader(new FileReader("todos.json"));
 
       ObjectMapper mapper = new ObjectMapper();
-      Todo[] todos = mapper.readValue(in.readLine(), Todo[].class);
-
-      for (Todo todo : todos) {
-        todoList.add(todo);
-      }
+      todoList = new ArrayList(mapper.readValue(in.readLine(), Todo[].class));
 
       in.close();
     } catch (Exception e) {

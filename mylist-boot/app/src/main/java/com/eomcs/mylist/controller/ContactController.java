@@ -24,11 +24,7 @@ public class ContactController {
       BufferedReader in = new BufferedReader(new FileReader("contacts.json"));
 
       ObjectMapper mapper = new ObjectMapper();
-      Contact[] contacts = mapper.readValue(in.readLine(), Contact[].class);
-
-      for (Contact contact : contacts) {
-        contactList.add(contact);
-      }
+      contactList = new ArrayList(mapper.readValue(in.readLine(), Contact[].class));
 
       in.close();
 
