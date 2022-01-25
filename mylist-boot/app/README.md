@@ -1,27 +1,23 @@
-# 08.1 DAO 역할 도입: 데이터 보관 처리 코드를 별도의 클래스로 분리
+# 08.2 DAO 역할 도입: 인터페이스 도입하여 DAO 사용 규칙을 통일하기
 
-- 데이터 보관처리를 수행하는 코드를 별도의 클래스로 분리한다.
+- DAO 사용 규칙을 정의하여 프로그래밍의 일관성을 확보한다.
 
 ## 백엔드 개발 실습
 
-### 1단계 - BoardController 클래스에서 데이터 보관 처리 코드를 분리하여 CsvBoardDao 클래스로 정의한다.
+### 1단계 - 인터페이스로 DAO 사용 규칙을 정의한다.
 
-- com.eomcs.mylist.dao.CsvBoardDao 클래스 생성
-  - BoardController 에서 데이터 보관 처리와 관련된 코드를 가져온다.
-  - 등록, 변경, 삭제할 때 즉시 저장한다.
+- com.eomcs.mylist.dao.BoardDao 인터페이스 정의
+  - DAO 객체에 대해 호출하는 메서드의 시그너처를 정의한다.
+  - 일관된 호출이 가능
+
+### 2단계 - 기존의 XxxBoardDao를 인터페이스 규칙에 따르도록 변경한다.
+- com.eomcs.mylist.dao.XxxBoardDao 클래스 변경
+  - BoardDao 규칙에 따라 클래스를 작성한다.
+
+### 3단계 - XxxBoardDao를 사용할 때 인터페이스 규칙에 따라 사용한다.
+
 - com.eomcs.mylist.controller.BoardController 클래스 변경
-  - 데이터 처리 코드를 CsvBoardDao 클래스로 옮긴다.
-  - save() 메서드 삭제
-
-### 2단계 - 데이터를 저장할 때 CSV 포맷 대신 바이너리 형식으로 저장한다.
-
-- com.eomcs.mylist.dao.BinaryBoardDao 클래스 생성
-  - 인스턴스의 각 필드를 바이트 배열로 저장한다.
-- com.eomcs.mylist.controller.BoardController 클래스 변경
-  - CsvBoardDao를 BinaryBoardDao로 교체한다.
-
-
-
+  - BoardDao 규칙에 따라 DAO 객체를 사용한다.
 
 
 ## 프론트엔드 개발 실습
