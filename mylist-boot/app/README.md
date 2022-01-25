@@ -19,6 +19,22 @@
 - com.eomcs.mylist.controller.BoardController 클래스 변경
   - BoardDao 규칙에 따라 DAO 객체를 사용한다.
 
+### 4단계 - JSON 형식으로 데이터를 저장하고 읽는 DAO를 인터페이스 규칙에 따라 작성한다.
+
+- com.eomcs.mylist.dao.JsonBoardDao 클래스 생성
+  - BoardDao 인터페이스 규칙에 따라 작성한다.
+- com.eomcs.mylist.controller.BoardController 클래스 변경
+  - JsonBoardDao 를 BoardDao 구현체로 사용한다.
+
+
+### 5단계 - BoardDao 구현체를 Spring Boot가 주입하도록 변경한다.
+
+- com.eomcs.mylist.dao.JsonBoardDao 클래스 변경
+  - 클래스 선언부에 @Repository 애노테이션을 붙인다.
+- com.eomcs.mylist.controller.BoardController 클래스 변경
+  - BoardDao 필드 선언에 @Autowired 애노테이션을 붙인다.
+
+
 
 ## 프론트엔드 개발 실습
 
