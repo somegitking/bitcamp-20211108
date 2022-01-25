@@ -396,6 +396,10 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - MyList 프로젝트 실습
   - 08.1 DAO 역할 도입: 데이터 보관 처리 코드를 별도의 클래스로 분리(계속)
+  - 08.2 DAO 역할 도입: 인터페이스 도입하여 DAO 사용 규칙을 통일하기
+  - 08.3 DAO 역할 도입: 상속의 generalization을 수행하여 추상 클래스 정의하기
+
+
 
 ##
 
