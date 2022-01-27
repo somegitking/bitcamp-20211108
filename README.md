@@ -382,8 +382,8 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex01: Object 클래스(계속)
     - shallow/deep copy
   - ex02: Wrapper 클래스 사용법
-- 미니 프로젝트(project-app1)
-  - 계산기 만들기(1단계 ~ 8단계)
+- 미니 프로젝트(project-app1): 계산기 만들기
+  - 1단계 ~ 8단계
   - 클라이언트/서버 애플리케이션 만들기 소개
 
 ## 55일차(2022-01-24,월)
@@ -407,7 +407,9 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 58일차(2022-01-27,목)
 
-
-
+- 자바 OOP 문법(com.eomcs.oop)
+  - ex09: 인터페이스 사용법(계속)
+- 미니 프로젝트(project-app1): 계산기 만들기
+  - 9단계: 클라이언트/서버 애플리케이션으로 구조를 변경하기
 
 ##
