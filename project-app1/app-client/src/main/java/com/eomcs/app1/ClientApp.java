@@ -21,6 +21,7 @@ public class ClientApp {
         break;
       }
 
+      // 예) input = "192.168.0.3/+/100/200"
       int slashPos = input.indexOf("/"); // 예) +/100/200, */3/7, -/100/73, //12/3
       String serverAddress = input.substring(0, slashPos);
       String queryString = input.substring(slashPos + 1);

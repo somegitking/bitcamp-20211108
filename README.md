@@ -443,9 +443,15 @@ https://meet.google.com/cyz-mbfk-qaa
   - 클라이언트 접속 테스트
     - 서버 주소를 ec2 public IP로 설정한 다음에 실행한다.
 
+## 59일차(2022-01-28,금)
 
-
-
+- 미니 프로젝트(project-app1): 계산기 만들기
+  - 9단계: 클라이언트/서버 애플리케이션으로 구조를 변경하기
+    - Thread를 이용한 멀티태스킹 적용
+    - encoding/decoding 활용하여 보내는 데이터의 문자 충돌 방지
+    - URLEncoding/URLDecoding 의 원리와 존재 이유
+  - 10단계: 클라이언트를 웹브라우저로 대체하기
+    - ServerApp을 HTTP 서버로 변경한다.
 
 
 
