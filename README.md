@@ -455,7 +455,12 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 60일차(2022-02-03,목)
 
-
+- 미니 프로젝트(project-app1): 계산기 만들기
+  - 11단계: 웹기술 도입 - 스프링 부트 적용
+  - 12단계: 웹기술 도입 - HTML/CSS/JavaScript로 UI 생성
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex01: 클라이언트/서버 프로그래밍 소개
+  - ex02: ServerSocket/Socket, 대기열, accept() 다루기
 
 
 ##
