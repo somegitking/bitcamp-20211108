@@ -453,6 +453,9 @@ https://meet.google.com/cyz-mbfk-qaa
   - 10단계: 클라이언트를 웹브라우저로 대체하기
     - ServerApp을 HTTP 서버로 변경한다.
 
+## 60일차(2022-02-03,목)
+
+
 
 
 ##
