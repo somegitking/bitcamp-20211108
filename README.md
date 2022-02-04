@@ -462,5 +462,10 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex01: 클라이언트/서버 프로그래밍 소개
   - ex02: ServerSocket/Socket, 대기열, accept() 다루기
 
+## 61일차(2022-02-04,금)
+
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex03: 
+
 
 ##
