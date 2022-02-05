@@ -4,7 +4,7 @@
   한 클래스로 모아 둔다.
 
 ## 백엔드 개발 실습
-
+ 
 ### 1단계 - XxxBoardDao 클래스에 대해 generalization을 수행한다.
 
 - com.eomcs.mylist.dao.AbstractBoardDao 클래스 생성

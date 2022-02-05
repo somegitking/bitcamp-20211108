@@ -453,6 +453,28 @@ https://meet.google.com/cyz-mbfk-qaa
   - 10단계: 클라이언트를 웹브라우저로 대체하기
     - ServerApp을 HTTP 서버로 변경한다.
 
+## 60일차(2022-02-03,목)
+
+- 미니 프로젝트(project-app1): 계산기 만들기
+  - 11단계: 웹기술 도입 - 스프링 부트 적용
+  - 12단계: 웹기술 도입 - HTML/CSS/JavaScript로 UI 생성
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex01: 클라이언트/서버 프로그래밍 소개
+  - ex02: ServerSocket/Socket, 대기열, accept() 다루기
+
+## 61일차(2022-02-04,금)
+
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex03: 데이터 주고 받기
+- 미니 프로젝트(project-app1): 계산기 만들기
+  - 8.1단계: 예외 처리 문법 적용
+- 예외 처리(com.eomcs.exception)
+  - ex1: 예외 처리 문법이 없을 경우 오류 상황을 알리는 방법
+  - ex2: 예외 처리 문법을 이용하여 오류 상황을 알리기
+  - ex3: 예외처리 문법
+  - ex4: Exception과 RuntimeException의 차이
+  - ex5: 사용자 정의 예외 클래스 만들기
+
 
 
 ##
