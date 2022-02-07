@@ -479,7 +479,8 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - 자바 네트워킹 프로그래밍(com.eomcs.net)
   - ex03: 데이터 주고 받기(계속)
-  - ex04: 
+  - ex04: Stateful/Stateless 통신
+  
 
 
 
