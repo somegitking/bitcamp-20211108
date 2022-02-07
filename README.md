@@ -97,7 +97,7 @@ https://meet.google.com/cyz-mbfk-qaa
 - 인코딩과 디코딩에 대해 설명할 수 있는가?
 - 이스케이프 문자에 대해 설명할 수 있는가?
 - 요청 파라미터와 변수를 설명할 수 있는가?
-- 코로나로 휴강
+- 코로나로 휴강(오전 2교시까지만 수업함)
 
 ## 20일차(2021-12-03,금)
 - 변수 선언이 무엇인지 설명할 수 있는가?
@@ -474,6 +474,13 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex3: 예외처리 문법
   - ex4: Exception과 RuntimeException의 차이
   - ex5: 사용자 정의 예외 클래스 만들기
+
+## 62일차(2022-02-07,월)
+
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex03: 데이터 주고 받기(계속)
+  - ex04: Stateful/Stateless 통신
+  
 
 
 
