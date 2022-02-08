@@ -480,8 +480,11 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자바 네트워킹 프로그래밍(com.eomcs.net)
   - ex03: 데이터 주고 받기(계속)
   - ex04: Stateful/Stateless 통신
-  
 
+## 63일차(2022-02-08,화)
+
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex05: Connection-oriented/Connectionless 통신
 
 
 ##
