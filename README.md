@@ -485,6 +485,9 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - 자바 네트워킹 프로그래밍(com.eomcs.net)
   - ex05: Connection-oriented/Connectionless 통신
-
+  - ex06: HTTP Client/Server 만들기
+  - ex07: URL 클래스 사용법
+  - ex08: URL, URLConnection 클래스를 사용하여 HTTP 요청하기
+  
 
 ##
