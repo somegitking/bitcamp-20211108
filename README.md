@@ -496,6 +496,7 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex12: 채팅 클라이언트/서버 만들기
     - AWT 채팅 클라이언트
     - Swing 채팅 클라이언트
+    - 멀티스레딩과 중첩클래스
 
 
 
