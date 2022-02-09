@@ -490,4 +490,11 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex08: URL, URLConnection 클래스를 사용하여 HTTP 요청하기
   - ex11: 계산기 클라이언트/서버 만들기
 
+## 64일차(2022-02-09,수)
+
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex12: 채팅 클라이언트/서버 만들기
+
+
+  
 ##
