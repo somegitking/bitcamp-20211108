@@ -498,6 +498,11 @@ https://meet.google.com/cyz-mbfk-qaa
     - Swing 채팅 클라이언트
     - 멀티스레딩과 중첩클래스
 
+## 65일차(2022-02-10,목)
 
+- 자바 네트워킹 프로그래밍(com.eomcs.net)
+  - ex12: 채팅 클라이언트/서버 만들기(계속)
+- 객체지향 문법(com.eomcs.oop)
+  - ex11: 중첩클래스 사용법
 
 ##
