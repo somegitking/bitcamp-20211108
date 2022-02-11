@@ -506,6 +506,10 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex11: 중첩클래스 사용법
     - overview: 패키지 멤버 클래스에서 익명 클래스까지
 
+## 66일차(2022-02-11,금)
 
-    
+- 객체지향 문법(com.eomcs.oop)
+  - ex11: 중첩클래스 사용법(계속)
+
+
 ##
