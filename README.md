@@ -509,6 +509,7 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 66일차(2022-02-11,금)
 
 - 객체지향 문법(com.eomcs.oop)
-  - ex11: 중첩클래스 사용법
+  - ex11: 중첩클래스 사용법(계속)
+
 
 ##
