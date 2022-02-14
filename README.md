@@ -512,4 +512,14 @@ https://meet.google.com/cyz-mbfk-qaa
   - ex11: 중첩클래스 사용법(계속)
 
 
+## 67일차(2022-02-14,월)
+
+- 객체지향 문법(com.eomcs.oop)
+  - ex11: 중첩클래스 사용법(계속)
+  - ex12: 람다(lambda) 및 메서드 레퍼런스 사용법
+    - Exam0110 ~ Exam0620
+    - Exam0810
+- 자료구조(com.eomcs.algorithm.data_structure)
+  - linkedlist2 패키지 예제
+
 ##
