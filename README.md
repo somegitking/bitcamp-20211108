@@ -522,4 +522,26 @@ https://meet.google.com/cyz-mbfk-qaa
 - 자료구조(com.eomcs.algorithm.data_structure)
   - linkedlist2 패키지 예제
 
+
+## 68일차(2022-02-15,화)
+
+- 제네릭 문법(com.eomcs.generic)
+  - ex01: 제네릭 기초 사용법
+  - ex02: 제네릭 레퍼런스와 인스턴스
+  - ex03: LinkedList에 대해 제네릭 적용 전/후
+- 자바 기본 클래스 사용법(com.eomcs.basic) : 자습!!
+  - ex03: java.util.ArrayList 컬렉션 클래스 사용법
+  - ex04: java.util.LinkedList 컬렉션 클래스 사용법
+  - ex05: java.util.Stack 클래스 사용법
+  - ex06: java.util.Queue 클래스 사용법
+  - ex07: java.util.HashSet 클래스 사용법
+  - ex08: java.util.Map 클래스 사용법
+  - ex09: 자바에서 외부 프로그램을 실행하는 방법
+
+
+
+
+
+
+
 ##
