@@ -14,7 +14,7 @@ public class App {
 
     while (true) {
       printMenu();
-      String input = prompt();
+      String input = promptString("명령> ");
 
       if (checkQuit(input)) {
         break;
@@ -50,9 +50,13 @@ public class App {
     System.out.println("5. 삭제");
   }
 
-  private String prompt() {
-    System.out.print("명령> ");
+  private String promptString(String title) {
+    System.out.print(title);
     return keyScan.nextLine();
+  }
+
+  private int promptInt(String title) {
+    return Integer.parseInt(promptString(title));
   }
 
   private boolean checkQuit(String input) {
@@ -60,17 +64,10 @@ public class App {
   }
 
   private void createScore() {
-    System.out.print("이름? ");
-    String name = keyScan.nextLine();
-
-    System.out.print("국어? ");
-    int kor = Integer.parseInt(keyScan.nextLine());
-
-    System.out.print("영어? ");
-    int eng = Integer.parseInt(keyScan.nextLine());
-
-    System.out.print("수학? ");
-    int math = Integer.parseInt(keyScan.nextLine());
+    String name = promptString("이름? ");
+    int kor = promptInt("국어? ");
+    int eng = promptInt("영어? ");
+    int math = promptInt("수학? ");
   }
 
   private void listScore() {
