@@ -124,7 +124,13 @@ public class App {
   }
 
   private void deleteScore() {
+    int no = promptInt("번호? ");
+    if (no < 0 || no >= scores.size()) {
+      System.out.println("번호가 유효하지 않습니다.");
+      return;
+    }
 
+    scores.remove(no);
   }
 }
 
