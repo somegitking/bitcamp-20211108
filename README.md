@@ -540,7 +540,10 @@ https://meet.google.com/cyz-mbfk-qaa
 
 
 
+## 69일차(2022-02-16,수)
 
+- 미니 프로젝트(project-app2): 성적관리시스템 만들기
+  - 1단계: 파일 I/O 스탠드얼론 프로그램
 
 
 
