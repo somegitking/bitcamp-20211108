@@ -14,8 +14,10 @@ public class ClientApp {
 
   public void service() {
     try (Socket socket = new Socket("localhost", 3306);
-        ObjectInputStream in = new ObjectInputStream(socket.getInputStream());
-        ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());) {
+        ObjectOutputStream out = new ObjectOutputStream(socket.getOutputStream());
+        ObjectInputStream in = new ObjectInputStream(socket.getInputStream());) {
+
+      System.out.println("서버와 연결되었음!");
 
       ScoreHandler scoreHandler = new ScoreHandler(in, out);
 
@@ -24,6 +26,8 @@ public class ClientApp {
         String input = Prompt.promptString("명령> ");
 
         if (checkQuit(input)) {
+          out.writeUTF("quit");
+          out.flush();
           break;
         }
 
