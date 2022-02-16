@@ -1,10 +1,11 @@
 package com.eomcs.app2;
 
-import java.util.Scanner;
+import com.eomcs.app2.handler.ScoreHandler;
+import com.eomcs.util.Prompt;
 
 public class App {
 
-  Scanner keyScan = new Scanner(System.in);
+  ScoreHandler scoreHandler = new ScoreHandler();
 
   public static void main(String[] args) {
     new App().service();
@@ -14,7 +15,7 @@ public class App {
 
     while (true) {
       printMenu();
-      String input = promptString("명령> ");
+      String input = Prompt.promptString("명령> ");
 
       if (checkQuit(input)) {
         break;
@@ -22,11 +23,11 @@ public class App {
 
       try {
         switch (input) {
-          case "1": createScore(); break;
-          case "2": listScore(); break;
-          case "3": detailScore(); break;
-          case "4": updateScore(); break;
-          case "5": deleteScore(); break;
+          case "1": scoreHandler.create(); break;
+          case "2": scoreHandler.list(); break;
+          case "3": scoreHandler.detail(); break;
+          case "4": scoreHandler.update(); break;
+          case "5": scoreHandler.delete(); break;
           default:
             System.out.println("올바른 메뉴 번호를 입력하세요!");
         }
@@ -38,7 +39,6 @@ public class App {
     }
 
     System.out.println("종료!");
-    keyScan.close();
   }
 
   private void printMenu() {
@@ -50,41 +50,8 @@ public class App {
     System.out.println("5. 삭제");
   }
 
-  private String promptString(String title) {
-    System.out.print(title);
-    return keyScan.nextLine();
-  }
-
-  private int promptInt(String title) {
-    return Integer.parseInt(promptString(title));
-  }
-
   private boolean checkQuit(String input) {
     return input.equals("quit") || input.equals("exit");
-  }
-
-  private void createScore() {
-    Score score = new Score();
-    score.setName(promptString("이름? "));
-    score.setKor(promptInt("국어? "));
-    score.setEng(promptInt("영어? "));
-    score.setMath(promptInt("수학? "));
-  }
-
-  private void listScore() {
-
-  }
-
-  private void detailScore() {
-
-  }
-
-  private void updateScore() {
-
-  }
-
-  private void deleteScore() {
-
   }
 }
 
