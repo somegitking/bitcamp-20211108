@@ -557,6 +557,7 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - DB 프로그래밍
   - MariaDB 설치하기(AWS EC2 서버)
+  - SQL : DDL 문법
 - 파이널 프로젝트 팀 빌딩
   - 명단
     - A반
