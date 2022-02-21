@@ -568,6 +568,13 @@ https://meet.google.com/cyz-mbfk-qaa
       - 4팀: 정요섭 곽민규 박경현 명준호 김재원 이상준
       - 5팀: 김지현 한상은 김규범 양성은 양승범 김주은
 
+## 72일차(2022-02-21,월)
+
+- 자바 입출력 기초(com.eomcs.io)
+  - ex15: Base64 인코딩/디코딩
+- SQL 문법(eomcs-docs/sql)
+  - DDL: Exam01.sql
+
 ## 프로젝트 절차
 
 - 프로젝트 주제 선정
