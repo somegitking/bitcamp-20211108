@@ -579,7 +579,9 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 73일차(2022-02-22,화)
 
 - SQL 문법(eomcs-docs/sql)
-  - DDL: Exam01.sql
+  - DDL: Exam01.sql(계속)
+  - DML: Exam02.sql
+  
 
 ## 프로젝트 절차
 
