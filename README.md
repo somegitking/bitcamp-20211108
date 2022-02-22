@@ -581,7 +581,8 @@ https://meet.google.com/cyz-mbfk-qaa
 - SQL 문법(eomcs-docs/sql)
   - DDL: Exam01.sql(계속)
   - DML: Exam02.sql
-  
+  - DQL: Exam03.sql
+
 
 ## 프로젝트 절차
 
