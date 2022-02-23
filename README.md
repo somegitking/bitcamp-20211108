@@ -583,6 +583,10 @@ https://meet.google.com/cyz-mbfk-qaa
   - DML: Exam02.sql
   - DQL: Exam03.sql
 
+## 74일차(2022-02-23,수)
+
+- SQL 문법(eomcs-docs/sql)
+  - DQL: Exam04.sql
 
 ## 프로젝트 절차
 
