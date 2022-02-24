@@ -590,8 +590,8 @@ https://meet.google.com/cyz-mbfk-qaa
 
 ## 75일차(2022-02-24,목)
 
-- SQL 문법(eomcs-docs/sql)
-  - DQL: Exam05.sql
+- DB 모델링
+  - 논리 모델링
 
 
 ## 프로젝트 절차
