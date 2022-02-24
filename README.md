@@ -588,6 +588,12 @@ https://meet.google.com/cyz-mbfk-qaa
 - SQL 문법(eomcs-docs/sql)
   - DQL: Exam04.sql
 
+## 75일차(2022-02-24,목)
+
+- SQL 문법(eomcs-docs/sql)
+  - DQL: Exam05.sql
+
+
 ## 프로젝트 절차
 
 - 프로젝트 주제 선정
