@@ -605,8 +605,17 @@ https://meet.google.com/cyz-mbfk-qaa
 - 파이널 프로젝트
   - 팀별 1차 논리 모델링 및 검토(계속)
 - SQL 문법(eomcs-docs/sql)
-  - DQL: Exam05.sql
- 
+  - DQL: Exam05.sql ~ Exam07_5.sql
+
+## 78일차(2022-03-02,수)
+
+- 파이널 프로젝트
+  - 1차 UI 프로토타입 발표
+  - 2차 UI 프로토타입 준비
+- SQL 문법(eomcs-docs/sql)
+  - DQL: Exam07_6.sql ~ Exam07_7.sql
+
+
 ## 프로젝트 절차
 
 - 프로젝트 주제 선정
