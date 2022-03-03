@@ -616,6 +616,12 @@ https://meet.google.com/cyz-mbfk-qaa
   - DQL: Exam07_6.sql ~ Exam07_7.sql
 
 
+## 79일차(2022-03-03,목)
+
+- JDBC 프로그래밍(com.eomcs.jdbc)
+  - JDBC API 와 드라이버의 개념
+  - ex01: java.sql.Driver 구현체 생성 및 등록
+
 ## 프로젝트 절차
 
 - 프로젝트 주제 선정
