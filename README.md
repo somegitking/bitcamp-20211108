@@ -626,6 +626,9 @@ https://meet.google.com/cyz-mbfk-qaa
 
 - JDBC 프로그래밍(com.eomcs.jdbc)
   - ex02: DBMS에 연결 및 SQL 실행하기
+- 파이널 프로젝트
+  - 2차 UI 프로토타입 발표
+  - 1차 DB 모델링 준비
 
 
 ## 프로젝트 절차
