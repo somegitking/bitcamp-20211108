@@ -622,6 +622,12 @@ https://meet.google.com/cyz-mbfk-qaa
   - JDBC API 와 드라이버의 개념
   - ex01: java.sql.Driver 구현체 생성 및 등록
 
+## 80일차(2022-03-04,금)
+
+- JDBC 프로그래밍(com.eomcs.jdbc)
+  - ex02: DBMS에 연결 및 SQL 실행하기
+
+
 ## 프로젝트 절차
 
 - 프로젝트 주제 선정
