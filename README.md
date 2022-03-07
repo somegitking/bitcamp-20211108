@@ -625,10 +625,19 @@ https://meet.google.com/cyz-mbfk-qaa
 ## 80일차(2022-03-04,금)
 
 - JDBC 프로그래밍(com.eomcs.jdbc)
-  - ex02: DBMS에 연결 및 SQL 실행하기
+  - ex01: JDBC API를 사용하여 SQL을 실행하는 방법
 - 파이널 프로젝트
   - 2차 UI 프로토타입 발표
   - 1차 DB 모델링 준비
+
+## 81일차(2022-03-07,월)
+
+- JDBC 프로그래밍(com.eomcs.jdbc)
+  - ex02: CRUD 구현과 DAO 객체 도입
+  - ex03: SQL 삽입 공격과 해결법, Statement vs PreparedStatement
+  - ex04: 자동 증가 PK값 알아내기, 수동 커밋 모드 다루기
+- 파이널 프로젝트
+  - 1차 DB 모델링 준비(계속)
 
 
 ## 프로젝트 절차
