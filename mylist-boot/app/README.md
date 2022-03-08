@@ -1,15 +1,13 @@
-# 08.3 DAO 역할 도입: 상속의 generalization을 수행하여 추상 클래스 정의하기
+# 09.1 자바 컬렉션 API 활용 : ArrayList/LinkedList 사용법
 
-- 추상 클래스 문법을 활용하여 서브 클래스의 공통 코드를 유지보수 하기 쉽게
-  한 클래스로 모아 둔다.
+- 직접 제작한 ArrayList 대신에 자바에서 제공하는 컬렉션 API를 사용하기
 
 ## 백엔드 개발 실습
- 
-### 1단계 - XxxBoardDao 클래스에 대해 generalization을 수행한다.
 
-- com.eomcs.mylist.dao.AbstractBoardDao 클래스 생성
-  - XxxBoardDao 클래스의 공통 코드를 가져온다.
-  - BoardDao 인터페이스를 구현한다.
+### 1단계 - 기존의 ArrayList를 자바 컬렉션 API로 교체한다.
+
+- com.eomcs.util.ArrayList 클래스 삭제
+  - java.util.ArrayList 클래스로 교체한다.
 
 ### 2단계 - XxxBoardDao 클래스의 수퍼 클래스를 AbstractBoardDao로 변경한다.
 - com.eomcs.mylist.dao.XxxBoardDao 클래스 변경
