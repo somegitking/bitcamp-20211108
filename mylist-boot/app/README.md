@@ -37,7 +37,7 @@ alter table ml_board
 JDBC Driver를 이용하여 MariaDB를 통해 데이터를 처리한다.
 
 - com.eomcs.mylist.dao.BoardDao 인터페이스 변경
-- com.eomcs.mylist.dao.XxxBoardDao 클래스 삭제
+- com.eomcs.mylist.dao.XxxBoardDao 클래스 삭제 
 - com.eomcs.mylist.dao.JdbcBoardDao 클래스 생성
 - com.eomcs.mylist.domain.Board 클래스 변경
 - com.eomcs.mylist.controller.BoardController 클래스 변경
