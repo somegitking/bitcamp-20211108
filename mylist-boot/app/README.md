@@ -1,45 +1,71 @@
-# 08.3 DAO 역할 도입: 상속의 generalization을 수행하여 추상 클래스 정의하기
+# 10.1 데이터 관리를 DBMS에게 맡기기 : JDBC API 사용
 
-- 추상 클래스 문법을 활용하여 서브 클래스의 공통 코드를 유지보수 하기 쉽게
-  한 클래스로 모아 둔다.
+- DBMS를 사용하여 데이터를 저장하고 조회하기
 
 ## 백엔드 개발 실습
- 
-### 1단계 - XxxBoardDao 클래스에 대해 generalization을 수행한다.
 
-- com.eomcs.mylist.dao.AbstractBoardDao 클래스 생성
-  - XxxBoardDao 클래스의 공통 코드를 가져온다.
-  - BoardDao 인터페이스를 구현한다.
+### 1단계 - 프로젝트에 JDBC Driver 추가한다.
 
-### 2단계 - XxxBoardDao 클래스의 수퍼 클래스를 AbstractBoardDao로 변경한다.
-- com.eomcs.mylist.dao.XxxBoardDao 클래스 변경
-  - AbstractBoardDao 클래스를 상속 받는다.
-  - save() 추상 메서드를 구현한다.
-  - 수퍼 클래스에서 상속 받은 메서드인 경우 서브 클래스에서 제거한다.
+- 그래이들 빌드 스크립트 파일(build.gradle) 변경
+  - mariadb jdbc driver 추가
+  - `$ gradle eclipse` 실행
+  - 이클립스 IDE에서 프로젝트 정보 갱신
 
-### 3단계 - BookController, ContactController, TodoController 클래스에서 데이터 처리 코드를 DAO 클래스로 분리한다.
+### 2단계 - 게시글을 저장할 테이블 생성
 
-- BookController 변경
-  - com.eomcs.mylist.dao.BookDao 인터페이스 생성
-  - com.eomcs.mylist.dao.AbstractBookDao 추상 클래스 생성
-  - com.eomcs.mylist.dao.JsonBookDao 일반 클래스 생성
-  - com.eomcs.mylist.controller.BookController 클래스 변경
-- ContactController 변경
-  - com.eomcs.mylist.dao.ContactDao 인터페이스 생성
-  - com.eomcs.mylist.dao.AbstractContactDao 추상 클래스 생성
-  - com.eomcs.mylist.dao.JsonContactDao 일반 클래스 생성
-  - com.eomcs.mylist.controller.ContactController 클래스 변경
-- TodoController 변경
-  - com.eomcs.mylist.dao.TodoDao 인터페이스 생성
-  - com.eomcs.mylist.dao.AbstractTodoDao 추상 클래스 생성
-  - com.eomcs.mylist.dao.JsonTodoDao 일반 클래스 생성
-  - com.eomcs.mylist.controller.TodoController 클래스 변경
+- mariadb 클라이언트를 사용하여 테이블을 생성한다.
+  - primary key 제약조건과 자동 증가 설정을 추가한다.
+
+```
+create table ml_board (
+    board_no int not null,
+    title varchar(255) not null,
+    content text not null,
+    created_date datetime default now(),
+    view_count int default 0
+);
+
+alter table ml_board
+  add constraint primary key(board_no);
+
+alter table ml_board
+  modify column board_no int not null auto_increment;
+```
+
+### 3단계 - 게시글 데이터 처리에 DBMS를 이용한다.
+
+JDBC Driver를 이용하여 MariaDB를 통해 데이터를 처리한다.
+
+- com.eomcs.mylist.dao.BoardDao 인터페이스 변경
+- com.eomcs.mylist.dao.XxxBoardDao 클래스 삭제 
+- com.eomcs.mylist.dao.JdbcBoardDao 클래스 생성
+- com.eomcs.mylist.domain.Board 클래스 변경
+- com.eomcs.mylist.controller.BoardController 클래스 변경
+
+### 4단계 - DAO 클래스에서 사용자 정의 RuntimeException 예외를 던진다.
+
+자바에서 제공하는 예외 클래스 대신 개발자가 정의한 RuntimeException 예외를 던진다.
+
+- com.eomcs.mylist.dao.DaoException 클래스 생성
+- com.eomcs.mylist.dao.BoardDao 인터페이스 변경
+  - 각 메서드에서 Exception 을 던지는 선언문을 제거한다.
+- com.eomcs.mylist.dao.JdbcBoardDao 클래스 변경
+  - 각 메서드에서 예외가 발생하면 DaoException 런타입 예외를 던진다.
+- com.eomcs.mylist.controller.BoardController 클래스 변경
+  - 각 메서드의 선언부에 있는 예외 던지는 문장을 제거한다.
+
+### 5단계 - DAO 구현 클래스를 별도의 패키지로 분리한다.
+
+- com.eomcs.mylist.dao.mariadb 패키지 생성
+- JdbcBoardDao 클래스를 mariadb 패키지로 이동
+- JdbcBoardDao 클래스 이름을 BoardDaoImpl 로 변경
 
 
 
 ## 프론트엔드 개발 실습
 
-
+- /src/main/resources/static/board/index.html 변경
+- /src/main/resources/static/board/view.html 변경
 
 
 
