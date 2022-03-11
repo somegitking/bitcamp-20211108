@@ -1,6 +1,6 @@
-# 10.1 데이터 관리를 DBMS에게 맡기기 : JDBC API 사용
+# 10.2 데이터 관리를 DBMS에게 맡기기 : DB 커넥션풀을 이용하여 DB 커넥션 재활용하기
 
-- DBMS를 사용하여 데이터를 저장하고 조회하기
+- DB 커넥션을 재활용하는 방법
 
 ## 백엔드 개발 실습
 
@@ -37,7 +37,7 @@ alter table ml_board
 JDBC Driver를 이용하여 MariaDB를 통해 데이터를 처리한다.
 
 - com.eomcs.mylist.dao.BoardDao 인터페이스 변경
-- com.eomcs.mylist.dao.XxxBoardDao 클래스 삭제 
+- com.eomcs.mylist.dao.XxxBoardDao 클래스 삭제
 - com.eomcs.mylist.dao.JdbcBoardDao 클래스 생성
 - com.eomcs.mylist.domain.Board 클래스 변경
 - com.eomcs.mylist.controller.BoardController 클래스 변경
