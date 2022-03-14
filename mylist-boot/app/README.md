@@ -47,16 +47,33 @@
 
 - BoardDao.xml 파일을 src/main/resources 폴더로 옮긴다.
 
-### 3단계: BoardDaoImpl 에 Mybatis를 적용한다.
 
-- com/eomcs/pms/conf/mybatis-config.xml 변경
-  - BoardMapper.xml 파일의 경로를 등록한다.
-- com/eomcs/pms/mapper/BoardMapper.xml 추가
-  - BoardDaoImpl 에 있던 SQL문을 이 파일로 옮긴다.
-- com.eomcs.pms.dao.mariadb.BoardDaoImpl 클래스 변경
-  - 의존 객체 SqlSession을 생성자를 통해 주입 받는다.
-  - SQL을 뜯어내어 BoardMapper.xml로 옮긴다.
-  - JDBC 코드를 뜯어내고 그 자리에 Mybatis 클래스로 대체한다.
+### 6단계 - BoardDao에 Mybatis를 적용한다.
+
+- Book 데이터를 저장할 테이블을 생성한다.
+```
+create table ml_book(
+  book_no int not null,
+  title varchar(255) not null,
+  author varchar(100) not null,
+  press varchar(100) not null,
+  feed text not null,
+  read_date date,
+  page int,
+  price int
+);
+
+alter table ml_book
+  add constraint primary key (book_no),
+  modify column book_no int not null auto_increment;
+```
+
+- com.eomcs.mylist.domain.Book 클래스 변경
+  - primary key 값을 저장할 no 필드를 추가한다.
+
+- com.eomcs.mylist.dao.BookDao 인터페이스 변경
+  - 메서드의 파라미터 및 리턴 타입 변경
+  - Mybatis 설정 추가
 
 ## 프론트엔드 개발 실습
 
