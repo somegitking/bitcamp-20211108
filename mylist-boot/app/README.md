@@ -18,16 +18,11 @@
   - `$ gradle eclipse`
 - 이클립스에서 프로젝트를 갱신한다.
 
-### 2단계 - `MyBatis` 설정 파일을 준비한다.
+### 2단계 - DAO 구현체에 Mybatis 프레임워크를 적용한다.
 
-- src/main/resources/com/eomcs/pms/conf/jdbc.properties
-  - 마이바티스 홈 : <http://www.mybatis.org>
-  - `MyBatis` 설정 파일에서 참고할 DBMS 접속 정보를 등록한다.
-- src/main/resources/com/eomcs/pms/conf/mybatis-config.xml
-  - `MyBatis` 설정 파일이다.
-  - DBMS 서버의 접속 정보를 갖고 있는 jdbc.properties 파일의 경로를 등록한다.
-  - DBMS 서버 정보를 설정한다.
-  - DB 커넥션 풀을 설정한다.
+- com.eomcs.mylist.dao.mariadb.BoarDaoImpl 클래스 변경
+  - SQL 코드를 뜯어내어 XML 파일로 옮긴다.
+    - /src/main/resources/com/eomcs/mylist/dao/BoardDao.xml
 
 
 ### 3단계: BoardDaoImpl 에 Mybatis를 적용한다.
