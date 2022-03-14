@@ -23,7 +23,29 @@
 - com.eomcs.mylist.dao.mariadb.BoarDaoImpl 클래스 변경
   - SQL 코드를 뜯어내어 XML 파일로 옮긴다.
     - /src/main/resources/com/eomcs/mylist/dao/BoardDao.xml
+- com.eomcs.mylist.App 클래스 변경
+  - SqlSessionFactory 객체 준비
 
+### 3단계 - DAO 구현체를 자동으로 생성한다.
+
+- com.eomcs.mylist.dao.mariadb.BoardDaoImpl 클래스 삭제
+- com.eomcs.mylist.dao.BoardDao 인터페이스 변경
+  - 애노테이션을 이용하여 Mybatis 관련 설정하기
+- com.eomcs.mylist.App 클래스 변경
+  - SqlSessionFactory 객체를 준비하는 메서드 제거
+
+### 4단계 - 레코드 값을 저장할 도메인 클래스의 별명을 설정한다.
+
+- src/main/resources/application.properties 파일 변경
+  - mybatis의 도메인 클래스의 별명 설정 추가
+- com/eomcs/mylist/dao/BoardDao.xml 파일 변경
+  - 도메인 클래스를 직접 사용하는 대신에 별명을 사용한다.
+  - <resultMap></resultMap> 태그를 이용하여 컬럼과 필드를 연결한다.
+
+
+### 5단계 - 자바 소스 파일과 설정 파일을 분리한다.
+
+- BoardDao.xml 파일을 src/main/resources 폴더로 옮긴다.
 
 ### 3단계: BoardDaoImpl 에 Mybatis를 적용한다.
 
