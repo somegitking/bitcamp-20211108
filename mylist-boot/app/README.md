@@ -75,7 +75,42 @@ alter table ml_book
   - 메서드의 파라미터 및 리턴 타입 변경
   - Mybatis 설정 추가
 
+- com.eomcs.mylist.controller.BookController 클래스 변경
+  - 메서드 파라미터 및 DAO 호출 코드 변경
+
+
+### 7단계 - ContactDao에 Mybatis를 적용한다.
+
+- Contact 데이터를 저장할 테이블을 생성한다.
+```
+create table ml_contact(
+  contact_no int not null,
+  name varchar(50) not null,
+  tel varchar(50) not null,
+  email varchar(20) not null,
+  company varchar(50)
+);
+
+alter table ml_contact
+  add constraint primary key (contact_no),
+  modify column contact_no int not null auto_increment;
+```
+
+- com.eomcs.mylist.domain.Book 클래스 변경
+  - primary key 값을 저장할 no 필드를 추가한다.
+
+- com.eomcs.mylist.dao.BookDao 인터페이스 변경
+  - 메서드의 파라미터 및 리턴 타입 변경
+  - Mybatis 설정 추가
+
+- com.eomcs.mylist.controller.BookController 클래스 변경
+  - 메서드 파라미터 및 DAO 호출 코드 변경
+
+
 ## 프론트엔드 개발 실습
+
+- 독서록 관련 UI 변경
+  - index.html, view.html
 
 
 
