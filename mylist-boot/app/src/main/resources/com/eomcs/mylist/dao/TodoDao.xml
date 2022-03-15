@@ -3,72 +3,62 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.eomcs.mylist.dao.BookDao">
+<mapper namespace="com.eomcs.mylist.dao.TodoDao">
 
-  <resultMap type="book" id="bookMap">
-    <id column="book_no" property="no"/>
+  <resultMap type="todo" id="todoMap">
+    <id column="todo_no" property="no"/>
     <result column="title" property="title"/>
-    <result column="author" property="author"/>
-    <result column="press" property="press"/>
-    <result column="feed" property="feed"/>
-    <result column="read_date" property="readDate"/>
-    <result column="page" property="page"/>
-    <result column="price" property="price"/>
+    <result column="done" property="done"/>
   </resultMap>
 
   <select id="countAll" resultType="int">
-    select count(*) from ml_book
+    select count(*) from ml_todo
   </select>
   
-  <select id="findAll" resultMap="bookMap">
+  <select id="findAll" resultMap="todoMap">
     select 
-      book_no,
+      todo_no,
       title,
-      author,
-      press
+      done
     from 
-      ml_book 
+      ml_todo 
     order by 
       title asc
   </select>
   
-  <insert id="insert" parameterType="book">
-    insert into ml_book(title,author,press,feed,read_date,page,price) 
-    values(#{title},#{author},#{press},#{feed},#{readDate},#{page},#{price})
+  <insert id="insert" parameterType="todo">
+    insert into ml_todo(title) 
+    values(#{title})
   </insert>
   
-  <select id="findByNo" resultMap="bookMap" parameterType="int">
+  <select id="findByNo" resultMap="todoMap" parameterType="int">
     select 
-      book_no,
+      todo_no,
       title,
-      author,
-      press,
-      feed,
-      read_date,
-      page,
-      price
+      done
     from 
-      ml_book 
+      ml_todo 
     where 
-      book_no=#{no}
+      todo_no=#{no}
   </select>
 
-  <update id="update" parameterType="book">
-    update ml_book set 
-      title=#{title}, 
-      author=#{author},
-      press=#{press},
-      feed=#{feed},
-      read_date=#{readDate},
-      page=#{page},
-      price=#{price}
+  <update id="update" parameterType="todo">
+    update ml_todo set 
+      title=#{title}
     where 
-      book_no=#{no}
+      todo_no=#{no}
+  </update>
+  
+  <update id="updateDone">
+    update ml_todo set 
+      done=#{done}
+    where 
+      todo_no=#{no}
   </update>
 
   <delete id="delete" parameterType="int">
-    delete from ml_book 
-    where book_no=#{no}
+    delete from ml_todo 
+    where todo_no=#{no}
   </delete>
 
 </mapper>
