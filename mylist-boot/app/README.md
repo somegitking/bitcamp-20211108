@@ -96,7 +96,7 @@ alter table ml_contact
   modify column contact_no int not null auto_increment;
 ```
 
-- com.eomcs.mylist.domain.Book 클래스 변경
+- com.eomcs.mylist.domain.Contact 클래스 변경
   - primary key 값을 저장할 no 필드를 추가한다.
 
 - com.eomcs.mylist.dao.BookDao 인터페이스 변경
